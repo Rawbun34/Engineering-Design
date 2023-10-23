@@ -69,8 +69,9 @@ void loop() {
   Serial.print(distance3);
   Serial.println(" cm");
   
+  delay(1000)
 // Trigger vibrator 1
-  if (distance1 <= 30) {
+  if (distance1 <= 50) {
     Serial.println("vibrate");
     digitalWrite(pwmPin1, HIGH);
   }
@@ -80,7 +81,7 @@ void loop() {
   };
   
   // Trigger vibrator 2
-  if (distance2 <= 30) {
+  if (distance2 <= 50) {
     Serial.println("vibrate");
     digitalWrite(pwmPin2, HIGH);
   }
@@ -91,7 +92,7 @@ void loop() {
   };
   
   // Trigger vibrator 3
-  if (distance3 <= 30) {
+  if (distance3 <= 50) {
     Serial.println("vibrate");
     digitalWrite(pwmPin3, HIGH);
   }
